@@ -7,15 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <style>
-        .same-font {
-  font-family: "Bebas Neue", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 
-    </style>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
 </head>
 <body>
     <header>
@@ -24,7 +35,7 @@
           </nav>
 
           <div class="banner">
-            <div class="banner-container w-9/12 flex mx-auto justify-between items-center pt-15 pb-25">
+            <div class="banner-container w-9/12 flex mx-auto justify-between items-center">
                 <div class="banner-content">
                     <h1 class="same-font lg:text-8xl"><span class="penguin text-amber-400">Be the Penguins</span> <br> <span class="winter">of Winter</span></h1>
                     <p class="same-font text-base font-light">Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry.</p>
