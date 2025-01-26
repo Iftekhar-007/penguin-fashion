@@ -7,39 +7,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+    <script src="https://kit.fontawesome.com/86ac6ed96e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
 <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
-    }
-  </style>
+  @theme {
+    --color-clifford: #da373d;
+  }
+</style>
 </head>
 <body>
-    <header>
+    <header class="bg-[rgba(255, 251, 240, 1)]">
           <nav>
 
           </nav>
 
-          <div class="banner">
-            <div class="banner-container w-9/12 flex mx-auto justify-between items-center">
+          <div class="banner bg-[#FFFBF0]">
+            <div class="banner-container w-9/12 flex mx-auto justify-between items-center pt-8 pb-10">
                 <div class="banner-content">
-                    <h1 class="same-font lg:text-8xl"><span class="penguin text-amber-400">Be the Penguins</span> <br> <span class="winter">of Winter</span></h1>
-                    <p class="same-font text-base font-light">Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry.</p>
-                    <button>Buy Now</button>
+                    <h1 class="same-font lg:text-8xl font-normal"><span class="penguin text-amber-400 font-[Bebas_Neue]">Be the Penguins</span> <br> <span class="winter text-[#363958] font-[Bebas_Neue]">of Winter</span></h1>
+                    <p class="same-font text-base font-light/[26px] text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry.</p>
+                    <button class="mt-4 rounded-[10px] py-4 px-8 text-base/[24px] font-medium text-[#ffffff] uppercase bg-linear-to-r from-[#A4BC46] to-[#85A019]"><i class="fa-solid fa-cart-shopping mr-2"></i>Buy Now</button>
                 </div>
 
                 <div class="display-image">
